@@ -23,8 +23,16 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
 body {
 	line-height: 1;
+	box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
@@ -45,4 +53,8 @@ table {
 a {
     text-decoration: none;
     box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
 }
