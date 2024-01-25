@@ -1,124 +1,16 @@
 /* font-family: "Playfair Display", serif; */
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-$color-primary: #427D9D;
-$color-light:  #9BBEC8;
-$color-dark: #164863;
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-$color-grey-dark: #777;
-$color-white: #fff;
-$color-black: #000;
+@import "components/button";
 
-header {
-    height: 95vh;
-    background-image: linear-gradient(to top, $color-light, $color-dark) , url(img/banner.jpg);
-    background-size: cover;
-    background-position: top;
-    position: relative;
+@import "layout/header";
 
-    &__logo-area {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
+@import "pages/home";
 
-        &header__logo {
-            font-family: "Playfair Display", serif;
-            font-weight: 400;
-            color: $color-white;
-            font-size: 2.5rem;
-        }
-    }
-
-    &__banner-area {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-
-        &h1, p {
-            color: $color-white;
-            font-family: "Playfair Display", serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            backface-visibility: hidden;
-        }
-
-        &h1 {
-            font-size: 6rem;
-            letter-spacing: 3.5rem;
-            display: block;
-        
-            animation-name: moveInLeft;
-            animation-duration: 2s;
-        }
-
-        &p {
-            font-size: 2rem;
-            letter-spacing: 1.7rem;
-            margin-top: 2rem;
-            display: block;
-            margin-bottom: 5rem;
-        
-            animation-name: moveInRight;
-            animation-duration: 2s;
-        }
-    }
-    
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    80% {
-        transform: translateX(1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    80% {
-        transform: translateX(-1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-.btn
-    &:link, .btn:visited {
-    text-transform: uppercase;
-    padding: 1.7rem 2rem;
-    display: inline-block;
-    transition: all .2s;
-
-    &--white {
-        background-color: $color-white;
-        color: $color-grey-dark;
-        border-radius: 1.7rem;
-    
-    }
-
-    &:hover {
-        transform: translateY(-.3rem);
-        box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
-    }
-
-    &:active {
-        transform: translateY(-.1rem);
-    }
-    
-}
