@@ -19,13 +19,15 @@ body {
 }
 
 .heading {
-	font-size: 1rem;
+	font-size: $default-font-size;
 	font-weight: 700;
 	text-transform: uppercase;
+	color: $color-grey-dark;
 }
 
 .paragraph {
-	font-size: 1rem;
+	font-size: $default-font-size;
+	color: $color-grey-dark;
 	&:not(:last-child) {
 		margin-bottom: 2rem;
 	}
