@@ -43,6 +43,50 @@ body {
   line-height: 1;
 }
 
+.about h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #9BBEC8, #164863);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.about h2:hover {
+  text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 3rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
 .btn--white {
   background-color: #fff;
   color: #777;
@@ -68,23 +112,30 @@ body {
   transition: all 0.2s;
 }
 
+.btn-text:link, .btn-text:visited {
+  color: #427D9D;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #427D9D;
+  padding: 3px;
+}
 .header {
   height: 95vh;
-  background-image: linear-gradient(to top, #9BBEC8, #164863), url(img/banner.jpg);
+  background-image: linear-gradient(to top, rgba(155, 190, 200, 0.6), rgba(22, 72, 99, 0.6)), url(../img/banner.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
 }
 .header__logo-area {
   position: absolute;
-  top: 4rem;
-  left: 4rem;
+  top: 2.5rem;
+  left: 2.5rem;
 }
 .header__logo {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .header__banner-area {
   position: absolute;
@@ -94,8 +145,8 @@ body {
   text-align: center;
 }
 .header__banner-area h1 {
-  font-size: 6rem;
-  letter-spacing: 3.5rem;
+  font-size: 4rem;
+  letter-spacing: 3rem;
   display: block;
   color: #fff;
   font-family: "Playfair Display", serif;
@@ -106,11 +157,11 @@ body {
   animation-duration: 2s;
 }
 .header__banner-area p {
-  font-size: 2rem;
-  letter-spacing: 1.7rem;
-  margin-top: 2rem;
+  font-size: 1rem;
+  letter-spacing: 1rem;
+  margin-top: 1.5rem;
   display: block;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   color: #fff;
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -122,7 +173,6 @@ body {
 
 .row {
   max-width: 50rem;
-  background-color: #e8e4e4;
   margin: 0 auto;
 }
 .row:not(:last-child) {
@@ -134,7 +184,6 @@ body {
   clear: both;
 }
 .row [class^=col-] {
-  background-color: firebrick;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
@@ -157,6 +206,11 @@ body {
 }
 .row .col-3-of-4 {
   width: calc(3 * (50rem - 3 * 2rem) / 4 + 4rem);
+}
+
+.about {
+  background-color: #f7f7f7;
+  padding: 3rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

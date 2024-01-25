@@ -1,21 +1,25 @@
 .header {
     height: 95vh;
-    background-image: linear-gradient(to top, $color-light, $color-dark) , url(img/banner.jpg);
+    background-image: linear-gradient(
+        to top, 
+        rgba($color-light, 0.6), 
+        rgba($color-dark, 0.6)), 
+        url(../img/banner.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
 
     &__logo-area {
         position: absolute;
-        top: 4rem;
-        left: 4rem;
+        top: 2.5rem;
+        left: 2.5rem;
     }
 
     &__logo {
         font-family: "Playfair Display", serif;
         font-weight: 400;
         color: $color-white;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     &__banner-area {
@@ -26,8 +30,8 @@
         text-align: center;
 
         & h1 {
-            font-size: 6rem;
-            letter-spacing: 3.5rem;
+            font-size: 4rem;
+            letter-spacing: 3rem;
             display: block;
             color: $color-white;
             font-family: "Playfair Display", serif;
@@ -40,11 +44,11 @@
         }
 
         & p {
-            font-size: 2rem;
-            letter-spacing: 1.7rem;
-            margin-top: 2rem;
+            font-size: $default-font-size;
+            letter-spacing: 1rem;
+            margin-top: 1.5rem;
             display: block;
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
             color: $color-white;
             font-family: "Playfair Display", serif;
             font-weight: 400;
