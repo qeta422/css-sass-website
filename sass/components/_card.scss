@@ -83,5 +83,34 @@
         &--1 {
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .5),  rgba($color-secondary-dark, .5));
         }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .5),  rgba($color-tertiary-dark, .5));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($color-light, .5),  rgba($color-primary, .5));
+        }
+    }
+
+    &__details {
+        padding: 1.5rem;
+
+        ul {
+            list-style-type: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: .9rem;
+                padding: .5rem;
+                color: $color-grey-dark;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
     }
 }
