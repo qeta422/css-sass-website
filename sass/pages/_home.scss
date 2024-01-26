@@ -2,3 +2,13 @@
     background-color: $color-grey-light-1;
     padding: 3rem 0;
 }
+
+.features {
+    padding: 15rem 0;
+    background-image: linear-gradient(
+        to top, 
+        rgba($color-light, 0.6), 
+        rgba($color-dark, 0.6)), 
+        url(../img/features.jpg);
+    background-size: cover;
+}
