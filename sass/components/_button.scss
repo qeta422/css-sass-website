@@ -74,4 +74,9 @@
     &:hover::before {
         transform: scaleX(1);
     }
+
+    &__center {
+        width: 10%;
+        margin: 0 auto;
+    }
 }

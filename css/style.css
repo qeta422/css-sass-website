@@ -150,6 +150,10 @@ body {
 .btn-text:hover::before {
   transform: scaleX(1);
 }
+.btn-text__center {
+  width: 10%;
+  margin: 0 auto;
+}
 
 .composition {
   position: relative;
@@ -321,7 +325,7 @@ body {
   width: 85%;
   margin: 0 auto;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 4rem;
   transform: skewX(-12deg);
@@ -335,14 +339,54 @@ body {
   clip-path: circle(40% at 50% 50%);
   -webkit-clip-path: circle(50% at 50% 50%);
   transform: translatex(-1rem) skewX(12deg);
+  position: relative;
 }
 .story__image {
-  width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: translateX(-1rem) scale(1.4);
+  transition: all 0.5s;
+  backface-visibility: hidden;
 }
 .story__text {
   transform: skewX(12deg);
+}
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -7%);
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+.story:hover .story__caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.story:hover .story__image {
+  transform: translateX(-1rem) scale(1);
+  filter: blur(1px) brightness(80%);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  overflow: hidden;
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .header {
@@ -447,12 +491,12 @@ body {
 
 .tours {
   background-color: #f7f7f7;
-  padding: 5rem 0 1rem 0;
+  padding: 5rem 0;
 }
 
 .stories {
-  background-color: #f7f7f7;
   padding: 10rem 0;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
