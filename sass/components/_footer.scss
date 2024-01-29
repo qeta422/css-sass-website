@@ -9,22 +9,25 @@
     }
 
     &__logo {
-        font-size: 10rem;
-    }
-
-    &__navigation {
-        
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        color: $color-white;
+        font-size: 2rem;
+        margin-bottom: 5rem;
     }
 
     &__list {
         list-style-type: none;
+        width: 30rem;
     }
 
     &__item {
         display: inline-block;
+        font-size: 1rem;
+
 
         &:not(:last-child) {
-            margin-right: 1rem;
+            margin-right: .5rem;
         }
     }
 
@@ -38,9 +41,14 @@
         }
 
         &:hover {
-            color: $color-primary;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            transition: .5s;
         }
+    }
+
+    &__copyright {
+        text-align: end;
+        color: $color-grey-light-2;
     }
 }
 
