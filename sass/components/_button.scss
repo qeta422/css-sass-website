@@ -2,14 +2,14 @@
     &--white {
         background-color: $color-white;
         color: $color-grey-dark;
-        border-radius: 1.7rem;
-    
+        border-radius: 3rem;
+        font-size: 1.5rem;
     }
 
     &--primary {
         background-color: $color-primary;
         color: $color-white;
-        border-radius: 1.7rem;
+        border-radius: 3rem;
     
     }
 
@@ -25,14 +25,14 @@
     
     &:link {
     text-transform: uppercase;
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
     display: inline-block;
     transition: all .2s;
     }
 
     &:visited {
     text-transform: uppercase;
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
     display: inline-block;
     transition: all .2s;
     }

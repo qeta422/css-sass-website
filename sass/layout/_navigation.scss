@@ -6,16 +6,26 @@
 
     &__button {
         background-color: $color-white;
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 6rem;
+        width: 6rem;
         position: fixed;
-        top: 3.3rem;
-        right: 3.3rem;
+        top: 3rem;
+        right: 3rem;
         border-radius: 50%;
         z-index: 200;
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
+
+        @include respond(tab-port) {
+            top: 1.5rem;
+            right: 1.5rem;
+        }
+
+        @include respond(phone) {
+            top: 1rem;
+            right: 1rem;
+        }
     }
 
     &__background {
@@ -23,8 +33,8 @@
         width: 3rem;
         border-radius: 50%;
         position: fixed;
-        top: 3.5rem;
-        right: 3.5rem;
+        top: 4rem;
+        right: 4rem;
         background-image: radial-gradient($color-light, $color-dark);
         z-index: 100;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -50,7 +60,7 @@
     }
 
     &__item {
-        margin: 1.5rem;
+        margin: 2rem;
     }
 
     &__link {
@@ -58,9 +68,9 @@
         &:link,
         &:visited {
             display: inline-block;
-            font-size: 1.5rem;
+            font-size: 2.7rem;
             font-weight: 300;
-            padding: .5rem 2rem;
+            padding: .2rem 2rem;
             color: $color-white;
             text-transform: uppercase;
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
@@ -68,7 +78,7 @@
             transition: all .4s;
 
             span {
-                margin: .6rem;
+                margin: .5rem;
                 display: inline-block;
             }
         }
@@ -93,12 +103,12 @@
 
     &__icon {
         position: relative;
-        margin-top: 1.6rem;
+        margin-top: 2.8rem;
 
         &,
         &::before,
         &::after {
-            width: 1.5rem;
+            width: 2rem;
             height: 2px;
             background-color: $color-grey-dark;
             display: inline-block;
