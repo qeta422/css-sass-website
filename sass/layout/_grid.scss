@@ -6,7 +6,7 @@
         margin-bottom: $gutter-vertical;
 
         @include respond(tab-port) {
-            margin-bottom: $gutter-vertical-small;
+            margin-bottom: $gutter-vertical;
         }
     }
 
@@ -24,7 +24,12 @@
             margin-right: $gutter-horisontal;
             @include respond(tab-port) {
                 margin-right: 0;
-                margin-bottom: $gutter-vertical-small;
+                margin-bottom: $gutter-vertical;
+            }
+
+            @include respond(tab-phone) {
+                margin-right: 0;
+                margin-bottom: $gutter-vertical;
             }
         }
 

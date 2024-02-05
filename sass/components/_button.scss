@@ -55,6 +55,11 @@
         transition: color 300ms ease-in-out;
     }
 
+    @include respond(tab-land) {
+        width: 13.4rem;
+        text-align: center ;
+    }
+
     &::before {
         content: '';
         background-color: $color-primary;
